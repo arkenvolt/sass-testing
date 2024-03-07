@@ -1,0 +1,10 @@
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: $titulo-sm;
+    color: $color-secundario;
+    p{
+        font-size: 14px;
+    }
+}

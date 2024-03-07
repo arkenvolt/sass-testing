@@ -1,0 +1,30 @@
+header{
+    font-family: $tipografia-titulos;
+    width: 100%;
+    background-color: $color-terciario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $titulo-lg;
+    .menu-header{
+        list-style-type: none;
+        display: flex;
+        li{
+            padding: 0px 12px;
+            color: $color-primario;
+            border-right: 1px solid black;
+            &:last-of-type{
+                border-right: unset;
+            }
+        }
+    }
+    img {
+        width: 150px;
+    a{
+        color: red;
+        &:hover{
+            color: $color-terciario;
+        }
+    }
+    }
+}
