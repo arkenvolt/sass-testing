@@ -1,3 +1,10 @@
+//funcion SIN parametros - declaracion
+@mixin media-query-mobile{
+    @media (max-width: 576px) {
+        @content;
+    }            
+}
+
 header{
     font-family: $tipografia-titulos;
     width: 100%;
@@ -6,6 +13,10 @@ header{
     justify-content: space-between;
     align-items: center;
     height: $titulo-lg;
+    @include media-query-mobile(){
+        height: 70px;
+        flex-direction: column;
+    }
     .menu-header{
         list-style-type: none;
         display: flex;
@@ -58,4 +69,16 @@ header{
         color: darkmagenta;
     }
     
+    //funcion con parametros - declaracion
+    @mixin flexbox($direccion, $jc, $ai){
+        display: flex;
+        flex-direction: $direccion;
+        justify-content: $jc;
+        align-items: $ai;
+    }
+    //funcion con parametros - utilizacion
+    header{
+        @include flexbox(row, center, center)
+    }
+  
 }
