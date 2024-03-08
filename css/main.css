@@ -76,6 +76,28 @@ header .bk-yellow {
 header .bk-white {
   background-color: white;
 }
+header .bk-1er {
+  background-color: #000098;
+}
+header .bk-2do {
+  background-color: #991199;
+}
+header .bk-3er {
+  background-color: #999900;
+}
+header .btn, header .btn-secundario, header .btn-primario {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #005555;
+}
+header .btn-primario {
+  background-color: aquamarine;
+  color: black;
+}
+header .btn-secundario {
+  background-color: beige;
+  color: darkmagenta;
+}
 
 footer {
   width: 100%;

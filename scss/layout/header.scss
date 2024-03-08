@@ -37,4 +37,25 @@ header{
             background-color: $color;
         }
     }
+    @each $name, $color in $colores{
+        .bk-#{$name}{
+            background-color: $color;
+        }
+    }
+    .btn{
+        padding: 12px 24px;
+        border-radius: 8px;
+        border: 1px solid #005555;
+    }
+    .btn-primario{
+        @extend .btn;
+        background-color: aquamarine;
+        color: black;
+    }
+    .btn-secundario{
+        @extend .btn;
+        background-color: beige;
+        color: darkmagenta;
+    }
+    
 }
