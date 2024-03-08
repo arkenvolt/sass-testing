@@ -1,7 +1,7 @@
 header{
     font-family: $tipografia-titulos;
     width: 100%;
-    background-color: $color-terciario;
+    background-color: map-get($colores, 1er);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@ header{
         li{
             padding: 0px 12px;
             color: $color-primario;
-            border-right: 1px solid black;
+            border-right: 1px solid #999900;
             &:last-of-type{
                 border-right: unset;
             }
@@ -30,6 +30,11 @@ header{
     @for $i from 1 through 10{
         .col-#{$i} {
             width: 10% * $i;
+        }
+    }
+    @each $color in red, black, yellow, white{
+        .bk-#{$color}{
+            background-color: $color;
         }
     }
 }

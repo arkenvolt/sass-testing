@@ -7,7 +7,7 @@
 header {
   font-family: "Montserrat";
   width: 100%;
-  background-color: #ff0000;
+  background-color: #000098;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ header .menu-header {
 header .menu-header li {
   padding: 0px 12px;
   color: #000;
-  border-right: 1px solid black;
+  border-right: 1px solid #999900;
 }
 header .menu-header li:last-of-type {
   border-right: unset;
@@ -63,6 +63,18 @@ header .col-9 {
 }
 header .col-10 {
   width: 100%;
+}
+header .bk-red {
+  background-color: red;
+}
+header .bk-black {
+  background-color: black;
+}
+header .bk-yellow {
+  background-color: yellow;
+}
+header .bk-white {
+  background-color: white;
 }
 
 footer {
